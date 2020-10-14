@@ -49,5 +49,4 @@ public class Road {
         return lengthOfRoad * qualityOfRoad / vehicleSpeed;
     }
 
-
 }
