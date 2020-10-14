@@ -1,14 +1,14 @@
-package taskTruckinIndustry.model;
+package taskTruckingIndustry.model;
+
+enum TypeOfRoadTransport {
+    LORRY, // грузовой автомобиль (до 10 т)
+    AWNING_SEMI_TRAILER, // тентованный полуприцеп (до 25 т)
+    JUMBO, // "jumbo" - полуприцеп увеличенной вместимости, имеющий особую «Г»-образную форму пола (до 35 т)
+    TANK, // цистерна - для перевозки наливных грузов (от 20 до 120 т)
+}
 
 public class RoadTransport {
-    public enum TypeOfRoadTransport {
-        LORRY, // грузовой автомобиль (до 10 т)
-        AWNING_SEMI_TRAILER, // тентованный полуприцеп (до 25 т)
-        JUMBO, // "jumbo" - полуприцеп увеличенной вместимости, имеющий особую «Г»-образную форму пола (до 35 т)
-        TANK, // цистерна - для перевозки наливных грузов (от 20 до 120 т)
-    }
-
-    //private double carryingCapacity;
+    //private double carryingCapacity; // грузоподъемность
     private TypeOfRoadTransport typeOfRoadTransport;
 
     public RoadTransport(TypeOfRoadTransport typeOfRoadTransport) {

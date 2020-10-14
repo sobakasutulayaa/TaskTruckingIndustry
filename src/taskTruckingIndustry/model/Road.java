@@ -1,4 +1,4 @@
-package taskTruckinIndustry.model;
+package taskTruckingIndustry.model;
 
 public class Road {
     private double lengthOfRoad;
