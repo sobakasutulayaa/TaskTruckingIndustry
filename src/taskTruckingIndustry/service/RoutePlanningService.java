@@ -2,7 +2,9 @@ package taskTruckingIndustry.service;
 
 import taskTruckingIndustry.model.RoadTransport;
 
-public class RoutePlanning {
+public class RoutePlanningService {
+
+
     public RoadTransport.TypeOfRoadTransport selectTransportType(double weight) {
         if (weight > 0 && weight < 10) {
             return RoadTransport.TypeOfRoadTransport.LORRY;

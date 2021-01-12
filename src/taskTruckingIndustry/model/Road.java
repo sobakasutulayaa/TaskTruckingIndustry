@@ -1,52 +1,75 @@
 package taskTruckingIndustry.model;
 
 public class Road {
-    private double lengthOfRoad;
-    private double qualityOfRoad;
-    private String cityOfDeparture;
-    private String arrivalCity;
-
-    public Road(double lengthOfRoad, double qualityOfRoad, String cityOfDeparture, String arrivalCity) {
-        this.lengthOfRoad = lengthOfRoad;
-        this.qualityOfRoad = qualityOfRoad;
-        this.cityOfDeparture = cityOfDeparture;
-        this.arrivalCity = arrivalCity;
+    public int getId() {
+        return id;
     }
 
-    public double getLengthOfRoad() {
-        return lengthOfRoad;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setLengthOfRoad(double lengthOfRoad) {
-        this.lengthOfRoad = lengthOfRoad;
+    private int id;
+    private String nameRoad;
+    private int dlinna;
+    private String quaality;
+    private int cityBegin;
+    private int cityEnd;
+
+    public Road() {
+
     }
 
-    public double getQualityOfRoad() {
-        return qualityOfRoad;
+    public Road(String nameRoad, int dlinna, String quaality, int cityBegin, int cityEnd) {
+        this.nameRoad = nameRoad;
+        this.dlinna = dlinna;
+        this.quaality = quaality;
+        this.cityBegin = cityBegin;
+        this.cityEnd = cityEnd;
     }
 
-    public void setQualityOfRoad(double qualityOfRoad) {
-        this.qualityOfRoad = qualityOfRoad;
+
+    public int getCityBegin() {
+        return cityBegin;
     }
 
-    public String getCityOfDeparture() {
-        return cityOfDeparture;
+    public void setCityBegin(int cityBegin) {
+        this.cityBegin = cityBegin;
     }
 
-    public void setCityOfDeparture(String cityOfDeparture) {
-        this.cityOfDeparture = cityOfDeparture;
+    public int getCityEnd() {
+        return cityEnd;
     }
 
-    public String getArrivalCity() {
-        return arrivalCity;
+    public void setCityEnd(int cityEnd) {
+        this.cityEnd = cityEnd;
     }
 
-    public void setArrivalCity(String arrivalCity) {
-        this.arrivalCity = arrivalCity;
+    public int getDlinna() {
+        return dlinna;
     }
 
-    public double calculateTimeSpentOnRoad(double vehicleSpeed) {
-        return lengthOfRoad * qualityOfRoad / vehicleSpeed;
+    public String getQuaality() {
+        return quaality;
     }
 
+    public void setDlinna(int dlinna) {
+        this.dlinna = dlinna;
+    }
+
+    public void setQuaality(String quaality) {
+        this.quaality = quaality;
+    }
+
+    public String getNameRoad() {
+        return nameRoad;
+    }
+
+    public void setNameRoad(String nameRoad) {
+        this.nameRoad = nameRoad;
+    }
+
+    public String toString() {
+        return nameRoad;
+    }
 }
